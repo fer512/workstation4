@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "entityTableName": "order_queue",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "order",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "OrderQueue",
+  "relationships": [
+    {
+      "otherEntityName": "queue",
+      "relationshipName": "queue",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ]
+}
