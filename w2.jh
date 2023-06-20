@@ -1,0 +1,56 @@
+
+enum WaitingRoomStatus{
+	ACTIVE, DISABLED
+}
+
+enum WorkerStatus{
+	ACTIVE, DISABLED
+}
+
+enum QueueStatus {
+    ACTIVE, DISABLED
+}
+
+enum AttencionChannelType{
+	VIRTUAL, PRESENTIAL, MIXED
+}
+enum WorkerProfileStatus{
+	ACTIVE, DISABLED
+}
+enum CompanyStatus {
+    ACTIVE, DISABLED
+}
+
+enum BranchStatus {
+    ACTIVE, DISABLED
+}
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}
+
+entity Company {
+	name String required unique,
+    status CompanyStatus required,
+    language Language required
+}
+
+entity Branch {
+	name String required unique,
+    status BranchStatus required,
+    language Language required
+}
+
+entity Queue {
+	name String required unique,
+    status QueueStatus required
+}
+
+entity AttencionChannel {
+	name String required unique,
+    type AttencionChannelType required
+}
+
+relationship OneToOne {
+    Queue to AttencionChannel
+}
