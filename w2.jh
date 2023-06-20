@@ -124,3 +124,11 @@ relationship ManyToOne {
     OrderQueue{queue} to Queue,
     WorkerProfile{company} to Company{workerProfiles}
 }
+
+paginate all with pagination
+
+dto * with mapstruct
+
+service all with serviceImpl
+
+filter Company, Branch, WorkerProfile, Worker, Queue, WaitingRoom
