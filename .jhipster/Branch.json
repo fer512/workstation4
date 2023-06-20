@@ -1,5 +1,7 @@
 {
   "applications": "*",
+  "changelogDate": "20230620191456",
+  "dto": "mapstruct",
   "entityTableName": "branch",
   "fields": [
     {
@@ -24,7 +26,9 @@
       "fieldValues": "FRENCH,ENGLISH,SPANISH"
     }
   ],
+  "jpaMetamodelFiltering": false,
   "name": "Branch",
+  "pagination": "pagination",
   "relationships": [
     {
       "otherEntityName": "company",
@@ -61,5 +65,7 @@
       "relationshipSide": "right",
       "relationshipType": "many-to-many"
     }
-  ]
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
 }

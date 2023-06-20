@@ -1,0 +1,9 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "WorkerStatus": {
+      "null": "",
+      "ACTIVE": "ACTIVE",
+      "DISABLED": "DISABLED"
+    }
+  }
+}

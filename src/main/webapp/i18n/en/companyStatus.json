@@ -1,0 +1,9 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "CompanyStatus": {
+      "null": "",
+      "ACTIVE": "ACTIVE",
+      "DISABLED": "DISABLED"
+    }
+  }
+}

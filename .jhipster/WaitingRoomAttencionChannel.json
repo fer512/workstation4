@@ -1,5 +1,7 @@
 {
   "applications": "*",
+  "changelogDate": "20230620191452",
+  "dto": "mapstruct",
   "entityTableName": "waiting_room_attencion_channel",
   "fields": [
     {
@@ -19,5 +21,8 @@
     }
   ],
   "name": "WaitingRoomAttencionChannel",
-  "relationships": []
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
 }

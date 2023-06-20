@@ -1,0 +1,10 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "AttencionChannelType": {
+      "null": "",
+      "VIRTUAL": "VIRTUAL",
+      "PRESENTIAL": "PRESENTIAL",
+      "MIXED": "MIXED"
+    }
+  }
+}

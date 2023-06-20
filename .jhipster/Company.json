@@ -1,5 +1,7 @@
 {
   "applications": "*",
+  "changelogDate": "20230620191458",
+  "dto": "mapstruct",
   "entityTableName": "company",
   "fields": [
     {
@@ -24,7 +26,9 @@
       "fieldValues": "FRENCH,ENGLISH,SPANISH"
     }
   ],
+  "jpaMetamodelFiltering": false,
   "name": "Company",
+  "pagination": "pagination",
   "relationships": [
     {
       "otherEntityName": "waitingRoom",
@@ -61,5 +65,7 @@
       "relationshipSide": "right",
       "relationshipType": "one-to-many"
     }
-  ]
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
 }
