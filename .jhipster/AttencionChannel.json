@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "entityTableName": "attencion_channel",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "AttencionChannelType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "VIRTUAL,PRESENTIAL,MIXED"
+    }
+  ],
+  "name": "AttencionChannel",
+  "relationships": [
+    {
+      "otherEntityName": "queue",
+      "otherEntityRelationshipName": "attencionChannel",
+      "relationshipName": "queue",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ]
+}
