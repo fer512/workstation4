@@ -1,0 +1,25 @@
+{
+  "applications": "*",
+  "entityTableName": "branch",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "BranchStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ACTIVE,DISABLED"
+    },
+    {
+      "fieldName": "language",
+      "fieldType": "Language",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "FRENCH,ENGLISH,SPANISH"
+    }
+  ],
+  "name": "Branch",
+  "relationships": []
+}
