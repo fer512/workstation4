@@ -1,0 +1,10 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "WaitingRoomAttencionChannelType": {
+      "null": "",
+      "VIRTUAL": "VIRTUAL",
+      "PRESENTIAL": "PRESENTIAL",
+      "MIXED": "MIXED"
+    }
+  }
+}

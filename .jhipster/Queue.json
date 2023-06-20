@@ -1,5 +1,7 @@
 {
   "applications": "*",
+  "changelogDate": "20230620191457",
+  "dto": "mapstruct",
   "entityTableName": "queue",
   "fields": [
     {
@@ -18,7 +20,9 @@
       "fieldValues": "ACTIVE,DISABLED"
     }
   ],
+  "jpaMetamodelFiltering": false,
   "name": "Queue",
+  "pagination": "pagination",
   "relationships": [
     {
       "otherEntityName": "attencionChannel",
@@ -40,5 +44,7 @@
       "relationshipSide": "left",
       "relationshipType": "many-to-many"
     }
-  ]
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
 }

@@ -1,0 +1,9 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "WaitingRoomStatus": {
+      "null": "",
+      "ACTIVE": "ACTIVE",
+      "DISABLED": "DISABLED"
+    }
+  }
+}

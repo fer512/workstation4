@@ -1,5 +1,7 @@
 {
   "applications": "*",
+  "changelogDate": "20230620191450",
+  "dto": "mapstruct",
   "entityTableName": "worker",
   "fields": [
     {
@@ -18,7 +20,9 @@
       "fieldValues": "ACTIVE,DISABLED"
     }
   ],
+  "jpaMetamodelFiltering": false,
   "name": "Worker",
+  "pagination": "pagination",
   "relationships": [
     {
       "otherEntityName": "company",
@@ -41,5 +45,7 @@
       "relationshipSide": "right",
       "relationshipType": "many-to-one"
     }
-  ]
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
 }

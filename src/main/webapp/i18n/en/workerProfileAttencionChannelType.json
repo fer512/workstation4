@@ -1,0 +1,10 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "WorkerProfileAttencionChannelType": {
+      "null": "",
+      "VIRTUAL": "VIRTUAL",
+      "PRESENTIAL": "PRESENTIAL",
+      "MIXED": "MIXED"
+    }
+  }
+}

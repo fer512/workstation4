@@ -1,5 +1,7 @@
 {
   "applications": "*",
+  "changelogDate": "20230620191453",
+  "dto": "mapstruct",
   "entityTableName": "worker_profile",
   "fields": [
     {
@@ -18,7 +20,9 @@
       "fieldValues": "ACTIVE,DISABLED"
     }
   ],
+  "jpaMetamodelFiltering": false,
   "name": "WorkerProfile",
+  "pagination": "pagination",
   "relationships": [
     {
       "otherEntityName": "workerProfileAttencionChannel",
@@ -46,5 +50,7 @@
       "relationshipSide": "left",
       "relationshipType": "many-to-many"
     }
-  ]
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
 }
