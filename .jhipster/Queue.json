@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "entityTableName": "queue",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "QueueStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ACTIVE,DISABLED"
+    }
+  ],
+  "name": "Queue",
+  "relationships": [
+    {
+      "otherEntityName": "attencionChannel",
+      "relationshipName": "attencionChannel",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "company",
+      "otherEntityRelationshipName": "queue",
+      "relationshipName": "company",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "branch",
+      "otherEntityRelationshipName": "queue",
+      "relationshipName": "branch",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "applications": "*",
+  "entityTableName": "attencion_channel",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "AttencionChannelType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "VIRTUAL,PRESENTIAL,MIXED"
+    }
+  ],
+  "name": "AttencionChannel",
+  "relationships": []
+}
