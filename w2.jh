@@ -1,0 +1,13 @@
+enum CompanyStatus {
+    ACTIVE, DISABLED
+}
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}
+
+entity Company {
+	name String required unique,
+    status CompanyStatus required,
+    language Language required
+}
